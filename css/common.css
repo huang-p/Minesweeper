@@ -1,0 +1,39 @@
+.result {
+	text-align: center;
+	display: none;
+}
+
+table {
+	margin: 100px auto;
+}
+
+.cell {
+	box-sizing: border-box;
+	width: 32px;
+	height: 32px;
+	border: 2px solid #aaa;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.cell.close {
+	background-color: #ccc;
+}
+
+.cell.close.flag {
+	background-image: url(../img/flag.png);
+	background-position: center;
+	background-size: 80%;
+	background-repeat: no-repeat;
+}
+
+.cell.close>* {
+	display: none;
+}
+
+.mine>* {
+	width: 70%;
+	height: 70%;
+	display: inline-block;
+	background: url(../img/mine.png) center/contain no-repeat;
+}
