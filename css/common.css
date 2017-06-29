@@ -4,7 +4,7 @@
 }
 
 table {
-	margin: 100px auto;
+	margin: 80px auto;
 }
 
 .cell {
@@ -14,10 +14,19 @@ table {
 	border: 2px solid #aaa;
 	text-align: center;
 	vertical-align: middle;
+	transition: border-color 1s;
 }
 
 .cell.close {
 	background-color: #ccc;
+}
+
+.detecting .cell.close:hover {
+	cursor: zoom-in;
+}
+
+.detecting .cell.close.mine:hover {
+	border-color: #f00;
 }
 
 .cell.close.flag {

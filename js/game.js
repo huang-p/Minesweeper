@@ -39,8 +39,10 @@ $(document).on('click', '.gaming .cell.close', function(e) {
 
 $(window).on('contextmenu', function(e) {
 	e.preventDefault();
-	e.stopPropagation();
-	return false;
+}).on('keyup', function(e) {
+	if (e.which == 17) {
+		$('table').toggleClass('detecting');
+	}
 });
 
 $(function() {
